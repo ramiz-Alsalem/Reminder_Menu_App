@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'work sans';
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    background-color: #f2eff6;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.inner-container {
+    background-color: #f2eff6;
+    padding: 0 0 30px;
+}
+.inner-container .head {
+    width: 100%;
+    padding: 15px 0;
+}
+.inner-container .head p {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.inner-container .head p a {
+    color: #047afb;
+    font-size: 18px;
+}
+.inner-container .head div input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #e3e2e8;
+    padding: 13px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-left: 35px;
+}
+.inner-container .head div input::placeholder,
+.inner-container .head div input::-webkit-input-placeholder,
+.inner-container .head div input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #96939a;
+}
+.inner-container .head div {
+    position: relative;
+}
+.inner-container .head div::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f002';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 20px;
+    color: #96939a;
+}
+.inner-container .nested-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+}
+.inner-container .nested-container .box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.inner-container .nested-container .box > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.inner-container .nested-container .box > div .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    font-size: 20px;
+}
+.inner-container .nested-container .box:first-child > div .icon {
+    background-color: #047afb;
+}
+.inner-container .nested-container .box:nth-child(2) > div .icon {
+    background-color: #ff9501;
+}
+.inner-container .nested-container .box:nth-child(3) > div .icon {
+    background-color: #5a636a;
+}
+.inner-container .nested-container .box:last-child > div .icon {
+    background-color: #ff4b26;
+}
+.inner-container .nested-container .box > div span {
+    font-weight: 700;
+    font-size: 30px;
+}
+.inner-container .nested-container .box p {
+    font-size: 20px;
+    color: #96939a;
+    font-weight: 600;
+}
+.inner-container .my-list h2 {
+    margin-bottom: 5px;
+}
+.inner-container .my-list ul {
+    background-color: white;
+    padding-left: 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.inner-container .my-list ul li {
+    padding: 20px 20px 20px 0;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.inner-container .my-list ul li:first-child {
+    border-bottom: 1px solid #d2d1d3;
+}
+.inner-container .my-list ul li span:last-child {
+    color: #96939a;
+}
+.inner-container .my-list ul li span:last-child i {
+    font-size: 16px;
+}
+.inner-container .my-list ul li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f0ca';
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.inner-container .my-list ul li:first-child:before {
+    background-color: #18b858;
+}
+.inner-container .my-list ul li:last-child:before {
+    background-color: #ffc704;
+}
